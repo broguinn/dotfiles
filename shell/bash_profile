@@ -15,19 +15,19 @@
 #
 #  ---------------------------------------------------------------------------
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
-fi
-
-# Git branch in prompt.
-
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+# if [ -f `brew --prefix`/etc/bash_completion ]; then
+#   . `brew --prefix`/etc/bash_completion
+# fi
+#
+# if [ -f ~/.bash_aliases ]; then
+#   . ~/.bash_aliases
+# fi
+#
+# # Git branch in prompt.
+#
+# parse_git_branch() {
+#   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
 
 #   -------------------------------
 #   1.  ENVIRONMENT CONFIGURATION
@@ -44,12 +44,12 @@ parse_git_branch() {
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 
-source ~/.bash_prompt
+# source ~/.bash_prompt
 
-for file in ~/.{bash_prompt}; do
-  [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+# for file in ~/.{bash_prompt}; do
+#   [ -r "$file" ] && [ -f "$file" ] && source "$file";
+# done;
+# unset file;
 
 
 
