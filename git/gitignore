@@ -16,12 +16,9 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-# Compiled Python files
-*.pyc
-
 # npm & bower
-bower_components
-node_modules
+# bower_components
+# node_modules
 npm-debug.log
 
 # IDEs stuff

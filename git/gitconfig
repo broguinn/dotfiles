@@ -12,7 +12,7 @@
 
         # Commit
         c = commit
-        ca = commit -a
+        cia = commit -a
         cm = commit -m
         cal = !git add -A && git commit              # Commit all changes
         cam = commit -am
@@ -74,13 +74,13 @@
         subpl = submodule update --init --recursive
 
         # Git flow
-        new = !git pull origin develop && git flow feature start
-        done = !git pull origin develop && git flow feature finish "$(git symbolic-ref --short HEAD | sed -n 's/^feature\\///p')"
-        go = !git checkout $1 && pull
-        master = !git checkout master && pull
-        develop = !git checkout develop && pull
-        mmm = !git fetch origin master && git rebase origin/master
-        ddd = !git fetch origin develop && git rebase origin/develop
+        # new = !git pull origin develop && git flow feature start
+        # done = !git pull origin develop && git flow feature finish "$(git symbolic-ref --short HEAD | sed -n 's/^feature\\///p')"
+        # go = !git checkout $1 && pull
+        # master = !git checkout master && pull
+        # develop = !git checkout develop && pull
+        # mmm = !git fetch origin master && git rebase origin/master
+        # ddd = !git fetch origin develop && git rebase origin/develop
 
         # Misc
         publish = "!git push --set-upstream origin $(git branch-name)"

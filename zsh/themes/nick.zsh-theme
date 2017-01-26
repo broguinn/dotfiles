@@ -31,6 +31,9 @@ SEGMENT_SEPARATOR='⮀'
 ONLINE='%{%F{green}%}◉'
 OFFLINE='%{%F{red}%}⦿'
 
+# Add fish-style substring
+setopt prompt_subst
+
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
 # rendering default background/foreground.
@@ -96,7 +99,7 @@ function prompt_online() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue black '%~'
+  prompt_segment blue black '$(shrink_path -f)'
 }
 
 # Status:
