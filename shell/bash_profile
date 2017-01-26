@@ -82,7 +82,7 @@
 #   -----------------------------
 
 alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
-alias ls='ls -GFhl'
+alias ls='ls -lah'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation

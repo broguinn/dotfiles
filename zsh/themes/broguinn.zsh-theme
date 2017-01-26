@@ -82,6 +82,9 @@ prompt_context() {
   # if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
   #   prompt_segment black default "%(!.%{%F{yellow}%}.)$USER@%m"
   # fi
+  if [[ -n "$SSH_CLIENT" || -n "$SSH_TTY" || -n "$SSH_CONNECTION" ]]; then
+    prompt_segment black default "SSH"
+  fi
 }
 
 # Git: branch/detached head, dirty status
