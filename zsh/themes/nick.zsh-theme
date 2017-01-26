@@ -31,9 +31,6 @@ SEGMENT_SEPARATOR='⮀'
 ONLINE='%{%F{green}%}◉'
 OFFLINE='%{%F{red}%}⦿'
 
-# Add fish-style substring
-setopt prompt_subst
-
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
 # rendering default background/foreground.
@@ -129,7 +126,7 @@ build_prompt() {
   prompt_end
 }
 
-RPROMPT='$(prompt_online) $(battery_charge)'
+RPROMPT='$(prompt_online)'
 
 PROMPT='%{%f%b%k%}$(build_prompt)
 » '
