@@ -42,7 +42,7 @@ plugins=(fabric brew node npm history git-flow vagrant zsh-syntax-highlighting s
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="nick"
+ZSH_THEME="broguinn"
 
 # Z beats cd most of the time
 . ~/z/z.sh
@@ -94,7 +94,7 @@ unset file;
 source $ZSH/oh-my-zsh.sh
 
 # Source local extra (private) settings specific to machine if it exists
-[ -f ~/.zsh.local ] && source ~/.zsh.local
+# [ -f ~/.zsh.local ] && source ~/.zsh.local
 
 # npm tab completion
 . <(npm completion)

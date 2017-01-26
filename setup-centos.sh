@@ -181,7 +181,7 @@ echo "done"
 declare -a FILES_TO_SYMLINK=(
 
   'shell/shell_aliases'
-  'shell/shell_config'
+  # 'shell/shell_config'
   'shell/shell_exports'
   'shell/shell_functions'
   'shell/bash_profile'
@@ -279,5 +279,5 @@ install_zsh () {
 
 main
 install_zsh
-ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
+ln -s ~/dotfiles/zsh/themes/broguinn.zsh-theme $HOME/.oh-my-zsh/themes
 source ~/.zshrc
